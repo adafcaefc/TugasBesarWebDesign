@@ -124,7 +124,7 @@ var text_shadow_visualizer = function(audio, elem, audioData)
 
         textCanvasCtx = textCanvas.getContext("2d");
 
-        textCanvasCtx.fillStyle = "rgba(255,138,198,1)";
+        textCanvasCtx.fillStyle = "rgba(255, 138, 198, 1)";
         textCanvasCtx.font = "bold 240px sans-serif";
         textCanvasCtx.textAlign = "center";
 
