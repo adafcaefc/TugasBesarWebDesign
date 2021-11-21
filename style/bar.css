@@ -1,0 +1,45 @@
+.bar-button 
+{
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+}
+
+.bar-button:hover 
+{
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	color: #000;
+	background-color: #ccc;
+}
+
+.bar
+{
+	width: 100%;
+	overflow: hidden;
+	display: inline-block;
+	width: auto;
+	position: static;
+	font-family: 'Roboto Condensed'
+}
+
+.bar .bar-item 
+{
+	padding: 8px 16px;
+	float: left;
+	width: auto;
+	border: none;
+	display: block;
+	outline: 0
+}
+
+.bar-button-text 
+{
+	padding-left: 16px;
+}

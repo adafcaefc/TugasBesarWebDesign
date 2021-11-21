@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+        <link href="style/main.css" rel="stylesheet">
+        <link href="style/bar.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+        <style>
+            body::-webkit-scrollbar 
+            {
+                display: none;
+            }
+            body 
+            {
+                -ms-overflow-style: none; 
+                scrollbar-width: none;
+            }
+            .showcase
+            {
+                color: rgb(255, 189, 223);
+                margin: 0px;
+                text-align: center;
+                background-color: black;
+            }
+            .showcase a
+            {
+                transition: all 0.2s ease-in-out;
+                text-decoration: none;
+                color: inherit;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            .showcase a:hover 
+            {
+                text-shadow: 0px 0px 0.75em rgb(255, 255, 255);
+                font-size: 1.25em;
+            }
+            .showcase a:visited
+            {
+                color: inherit;
+            }
+            .showcase p 
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                width: 50%;
+                margin: auto;
+                padding-bottom: 64px;
+            }
+            .bg-img
+            {
+                margin: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-1
+            {
+                background-image:
+                    linear-gradient(to bottom, #161616, rgba(0, 0, 0, 0)),
+                    url('assets/LovesickGirls_main.jpg');
+                width: 100%;
+            }
+            .img-2
+            {
+                background-image:
+                    linear-gradient(to bottom, black, rgba(0, 0, 0, 0)),
+                    url('assets/6d9967456acac60b7dd0c62b11b306a1.png');
+                width: 100%;
+            }
+            .iframe-wrapper iframe 
+            {
+                width: 100%;
+                height: 720px;
+                border: 0px;
+                margin: 0px;
+            }
+            @media screen and (prefers-reduced-motion: no-preference) 
+            {
+                html 
+                {
+                    scroll-behavior: smooth;
+                }
+            }
+            @media all and (max-width: 1500px) 
+            {
+                .iframe-wrapper iframe 
+                {
+                    width: 0px;
+                    height: 0px;
+                }
+            }
+        </style>
+    </head>
+    <body id="top">
+        <div class="bar">
+            <a href="" class="bar-item bar-button" style="visibility: hidden;"></a>
+            <a href="#home" class="bar-item bar-button"><i class="fa fa-home"></i><span class="bar-button-text">HOME</span></a>
+            <a href="#about" class="bar-item bar-button"><i class="fas fa-info-circle"></i><span class="bar-button-text">ABOUT</span></a>
+            <a href="#gallery" class="bar-item bar-button"><i class="fa fa-image"></i><span class="bar-button-text">GALLERY</span></a>
+            <a href="#social" class="bar-item bar-button"><i class="fas fa-share-alt"></i><span class="bar-button-text">SOCIAL</span></a>
+        </div>
+
+        <div class="iframe-wrapper">
+            <iframe src="music.html" scrolling="no" class="bg" id="home"></iframe>
+        </div>
+
+        <div class="bg-img img-1">
+            <img src="assets/LovesickGirls_main.jpg" style="visibility: hidden; width: 100%;" />
+        </div>
+
+        <div class="showcase">
+            <p>Blackpink is a South Korean girl group formed by YG Entertainment, consisting of members 
+                <a target="_blank" href="https://www.instagram.com/sooyaaa__">Jisoo</a>, 
+                <a target="_blank" href="https://www.instagram.com/jennierubyjane">Jennie</a>, 
+                <a target="_blank" href="https://www.instagram.com/roses_are_rosie">Rose</a>, and
+                <a target="_blank" href="https://www.instagram.com/lalalalisa_m">Lisa</a>.
+                The group debuted in August 2016 with their single album Square One, which featured "Whistle" and "Boombayah",
+                their first number-one entries on South Korea's Gaon Digital Chart and the Billboard World Digital Song Sales chart,
+                respectively.</p>
+
+            <p>"Lovesick Girls" is a song recorded by South Korean girl group Blackpink, released on October 2, 2020, through YG
+                Entertainment and Interscope Records, as the third single from the groups's first Korean-language studio album, The
+                Album (2020). It was written by Teddy, Løren, Danny Chung, and group members Jisoo and Jennie, while Teddy produced
+                the song alongside 24 and R. Tee. "Lovesick Girls" is a dance-pop and electropop song with elements of EDM sound.
+                Lyrically, the song deals with the pain after a heartbreak.</p>
+
+            <p>"Lovesick Girls" peaked at number 2 on the Gaon chart in South Korea. Elsewhere, the song has peaked at number two on
+                the Billboard Global 200 and number one on the Global Excl. U.S., and topped charts in Malaysia and Singapore. It
+                has also peaked at number 59 on the US Billboard Hot 100, and figured within the record charts in other 14
+                countries. The song was certified platinum in South Korea and gold in Japan. An accompanying music video for the
+                song was directed by Seo Hyun-seung and uploaded onto Blackpink's YouTube channel simultaneously with the single's
+                release. It garnered 61.4 million views in its first 24 hours, becoming the sixth biggest 24-hour debut for a music
+                video. The song was performed with "Pretty Savage" on several music programs in South Korea including Show! Music
+                Core and Inkigayo.</p>
+        </div>
+
+        <div class="bg-img img-2">
+            <img src="assets/LovesickGirls_main.jpg" style="visibility: hidden; width: 60%;" />
+            <footer>
+                <a href="#top">Back To Top</a>
+                <p>© 2021 Fan Page Group.  All rights reserved.</p>
+            </footer>
+        </div>
+
+    </body>
+</html>
