@@ -48,6 +48,7 @@
             }
             .img-1
             {
+                background-position: center;
                 background-image:
                     linear-gradient(to top, black, rgba(0, 0, 0, 0)),
                     url('assets/Blackpink-Dance-Cover-Challenge.png');
@@ -59,29 +60,7 @@
                     linear-gradient(to bottom, black, rgba(0, 0, 0, 0)),
                     url('assets/6d9967456acac60b7dd0c62b11b306a1.png');
                 width: 100%;
-            }
-            .iframe-wrapper iframe 
-            {
-                width: 100%;
-                height: 720px;
-                border: 0px;
-                margin: 0px;
-            }
-            @media screen and (prefers-reduced-motion: no-preference) 
-            {
-                html 
-                {
-                    scroll-behavior: smooth;
-                }
-            }
-            @media all and (max-width: 1500px) 
-            {
-                .iframe-wrapper iframe 
-                {
-                    width: 0px;
-                    height: 0px;
-                }
-            }
+            }     
         </style>
     </head>
     <body id="top">
@@ -93,12 +72,11 @@
             <a href="#social" class="bar-item bar-button"><i class="fas fa-share-alt"></i><span class="bar-button-text">SOCIAL</span></a>
         </div>
 
-        <div class="bg-img img-1">
-            <img src="assets/Blackpink-Dance-Cover-Challenge.jpg" style="visibility: hidden; width: 100%;" />
-        </div>
-
         <div class="showcase">
-            <p>...</p>
+            <div class="bg-img img-1">
+                <img src="assets/Blackpink-Dance-Cover-Challenge.jpg" style="visibility: hidden; width: 100%;" />
+            </div>
+            <p style="font-size: 2.5em;">...</p>
             <p>Blackpink is a South Korean girl group formed by YG Entertainment, consisting of members 
                 <a target="_blank" href="https://www.instagram.com/sooyaaa__">Jisoo</a>, 
                 <a target="_blank" href="https://www.instagram.com/jennierubyjane">Jennie</a>, 
@@ -123,7 +101,7 @@
             <img src="assets/LovesickGirls_main.jpg" style="visibility: hidden; width: 60%;" />
             <footer>
                 <a href="#top">Back To Top</a>
-                <p>© 2021 Fan Page Group.  All rights reserved.</p>
+                <p>&copy; 2021 Fan Page Group.  All rights reserved.</p>
             </footer>
         </div>
 

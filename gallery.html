@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/bar.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="assets/BP_Favicon_small.png">
+        <title>BLACKPINK FANPAGE</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+        <style>
+            .showcase
+            {
+                color: rgb(255, 189, 223);
+                margin: 0px;
+                text-align: center;
+                background-color: black;
+            }
+            .showcase a
+            {
+                transition: all 0.2s ease-in-out;
+                text-decoration: none;
+                color: inherit;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            .showcase a:hover 
+            {
+                text-shadow: 0px 0px 0.75em rgba(255, 181, 181, 0.418);
+                font-size: 1.25em;
+            }
+            .showcase a:visited
+            {
+                color: inherit;
+            }
+            .showcase p 
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                width: 50%;
+                margin: auto;
+                padding-bottom: 64px;
+                line-height: 28px;
+            }
+            .bg-img
+            {
+                margin: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-1
+            {
+                background-position: center;
+                background-image:
+                    linear-gradient(to top, black, rgba(0, 0, 0, 0.5)),
+                    url('assets/netizens-are-amaze-of-blackpink-childhood-photos-proving-their-natural-visuals.jpg');
+                width: 100%;
+            }
+            .img-1 img
+            {
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+            .img-2
+            {
+                background-image:
+                    linear-gradient(to bottom, black, rgba(0, 0, 0, 0)),
+                    url('assets/6d9967456acac60b7dd0c62b11b306a1.png');
+                width: 100%;
+            }
+            .video-showcase iframe
+            {
+                margin: 32px;
+            }
+        </style>
+        <script>
+            $.fn.slideToggleBool = function(bool, options) 
+            {
+                return bool? $(this).slideDown(options) : $(this).slideUp(options);
+            }
+            $(document).ready(function () 
+            {
+                $("div.lisa").slideToggleBool(false);
+                $("div.jisoo").slideToggleBool(false);
+                $("div.jennie").slideToggleBool(false);
+                $("div.rose").slideToggleBool(false);
+            });
+            function toggle_lisa()
+            {
+                $("div.lisa").slideToggle("slow");
+                $("div.jisoo").slideToggleBool(false);
+                $("div.jennie").slideToggleBool(false);
+                $("div.rose").slideToggleBool(false);
+            }
+            function toggle_jisoo()
+            {
+                $("div.jisoo").slideToggle("slow");
+                $("div.lisa").slideToggleBool(false);
+                $("div.jennie").slideToggleBool(false);
+                $("div.rose").slideToggleBool(false);
+            }
+            function toggle_jennie()
+            {
+                $("div.jennie").slideToggle("slow");
+                $("div.lisa").slideToggleBool(false);
+                $("div.jisoo").slideToggleBool(false);
+                $("div.rose").slideToggleBool(false);
+            }
+            function toggle_rose()
+            {
+                $("div.rose").slideToggle("slow");
+                $("div.lisa").slideToggleBool(false);
+                $("div.jisoo").slideToggleBool(false);
+                $("div.jennie").slideToggleBool(false);
+            }
+        </script>
+    </head>
+    <body id="top">
+        <div class="bar">
+            <a href="" class="bar-item bar-button" style="visibility: hidden;"></a>
+            <a href="index.html#home" class="bar-item bar-button"><i class="fa fa-home"></i><span class="bar-button-text">HOME</span></a>
+            <a href="about.html" class="bar-item bar-button"><i class="fas fa-info-circle"></i><span class="bar-button-text">ABOUT</span></a>
+            <a href="#gallery" class="bar-item bar-button"><i class="fa fa-image"></i><span class="bar-button-text">GALLERY</span></a>
+            <a href="#social" class="bar-item bar-button"><i class="fas fa-share-alt"></i><span class="bar-button-text">SOCIAL</span></a>
+        </div>
+
+        <div class="showcase">
+            <div class="bg-img img-1">
+                <img class="" src="assets/soft-cover.png" 
+                    style="width: auto; height: auto;" 
+                    usemap="#blackpink-image-map" />
+                <map name="blackpink-image-map">
+                    <area target="" alt="lisa" title="lisa" href="javascript:toggle_lisa();"
+                        coords="2,196,13,134,65,132,81,116,64,107,62,75,70,27,91,1,135,1,159,21,170,48,175,86,175,107,149,126,175,147,219,163,195,162,218,211,216,275,2,274"
+                        shape="poly">
+                    <area target="" alt="jisoo" title="jisoo" href="javascript:toggle_jisoo()"
+                        coords="218,277,219,212,200,166,232,166,243,161,248,142,270,107,275,57,289,23,308,3,356,-1,375,15,384,44,388,76,383,118,389,147,410,158,442,163,434,212,434,264,426,277"
+                        shape="poly">
+                    <area target="" alt="jennie" title="jennie" href="javascript:toggle_jennie()"
+                        coords="435,273,442,267,434,251,453,151,484,145,511,56,523,15,535,1,596,2,608,18,613,43,626,83,627,107,635,134,683,148,693,200,702,241,700,278"
+                        shape="poly">
+                    <area target="" alt="rose" title="rose" href="javascript:toggle_rose()"
+                        coords="705,278,704,242,686,153,743,131,747,115,734,90,723,61,713,39,716,18,727,1,799,-1,807,15,808,29,813,37,815,56,805,70,813,89,828,99,831,116,896,143,897,278,751,278"
+                        shape="poly">
+                </map>
+            </div>
+
+            <p style="font-size: 2.5em;">&nbsp;</p>
+            <div class="video-showcase lisa">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EY1okQ2Ubyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gh_qI8W7sP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c-SrsavLNb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hfax0J7A2Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gkn_alzrxF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-showcase jisoo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/emzxrZAHWYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IvUwdlhlLRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_wOKXC05jl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-showcase jennie">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wSYBay8oYJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/D-q6HDjMTA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vH3EhJFY3us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/erYPvNbc_mc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_93yUnhBtzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-showcase rose">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Swn6d0mynXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zWOjRqaHxgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YmZEXPPDCzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div class="bg-img img-2">
+            <img src="assets/6d9967456acac60b7dd0c62b11b306a1.png" style="visibility: hidden; width: 60%;" />
+            <footer>
+                <a href="#top">Back To Top</a>
+                <p>&copy; 2021 Fan Page Group.  All rights reserved.</p>
+            </footer>
+        </div>
+
+    </body>
+</html>
