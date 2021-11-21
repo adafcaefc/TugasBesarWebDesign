@@ -101,11 +101,11 @@ var text_shadow_visualizer = function(audio, elem, audioData)
         sample_average /= data_array.length;
 
         // kalkulasi bayangan
-        var shadow = 2 * (Math.exp(sample_average) - 1);
-        var shadow_inner = 2 * (Math.exp(sample_average / 2) - 1);
+        var shadow = 1 * (Math.exp(sample_average) - 1);
+        var shadow_inner = 1 * (Math.exp(sample_average / 2) - 1);
 
         // apply style css
-        main_text.style['text-shadow'] = "0px 0px " + shadow + "em #fff, 0px 0px " + shadow_inner + "em #f00";
+        main_text.style['text-shadow'] = "0px 0px " + shadow + "em rgba(255, 138, 198, 0.25), 0px 0px " + shadow_inner + "em #f00";
 
         // mendapatkan frequency data
         // https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData

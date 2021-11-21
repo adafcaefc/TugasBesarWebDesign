@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/bar.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="assets/BP_Favicon_small.png">
+        <title>BLACKPINK FANPAGE</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+        <style>
+            .showcase
+            {
+                color: rgb(255, 189, 223);
+                margin: 0px;
+                text-align: center;
+                background-color: black;
+            }
+            .showcase a
+            {
+                transition: all 0.2s ease-in-out;
+                text-decoration: none;
+                color: inherit;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            .showcase a:hover 
+            {
+                text-shadow: 0px 0px 0.75em rgba(255, 181, 181, 0.418);
+                font-size: 1.25em;
+            }
+            .showcase a:visited
+            {
+                color: inherit;
+            }
+            .showcase p 
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                width: 50%;
+                margin: auto;
+                padding-bottom: 64px;
+                line-height: 28px;
+            }
+            .bg-img
+            {
+                margin: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-1
+            {
+                padding-top: 128px;
+                padding-bottom: 256px;
+                background-position: center;
+                background-image:
+                    linear-gradient(to top, black, rgba(0, 0, 0, 0)),
+                    url('assets/Blackpink12.jpg');
+                width: 100%;
+            }
+            .img-2
+            {
+                background-image:
+                    linear-gradient(to bottom, black, rgba(0, 0, 0, 0)),
+                    url('assets/6d9967456acac60b7dd0c62b11b306a1.png');
+                width: 100%;
+            }    
+            form, input, select
+            { 
+                padding: 0;
+                margin: 0;
+                outline: none;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 16px;
+                color: #eee;
+            }
+            form 
+            {
+                padding: 32px;
+                width: 320px;
+                margin: auto;
+                background: rgba(0, 0, 0, 0.75); 
+            }
+            .title 
+            {
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .info 
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            input, select 
+            {
+                padding: 5px;
+                margin-bottom: 30px;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+            input::placeholder, select:invalid
+            {
+                color: rgba(238, 238, 238, 0.5);
+            }
+            option:focus 
+            {
+                border: none;
+            }
+            option 
+            {
+                background: black; 
+                border: none;
+            }
+            button 
+            {
+                text-transform: uppercase;
+                padding: 10px 5px;
+                margin-top: 20px;
+                border-radius: 5px; 
+                border: none;
+                background: #00000000; 
+                text-decoration: none;
+                font-size: 1.2em;
+                font-weight: 400;
+                color: #fff;
+                width: 100%;
+                transition: all 0.5s ease-in-out;
+                letter-spacing: 4px;
+                font-weight:200;
+                line-height: 32px;
+            }
+            button:hover 
+            {
+                cursor: pointer;
+                background: #00000000; 
+                text-shadow: 0 0px 15px rgba(255, 255, 255, .5);
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+    <body id="top">
+        <div class="bar">
+            <a href="" class="bar-item bar-button" style="visibility: hidden;"></a>
+            <a href="index.html#home" class="bar-item bar-button"><i class="fa fa-home"></i><span class="bar-button-text">HOME</span></a>
+            <a href="about.html" class="bar-item bar-button"><i class="fas fa-info-circle"></i><span class="bar-button-text">ABOUT</span></a>
+            <a href="gallery.html" class="bar-item bar-button"><i class="fa fa-image"></i><span class="bar-button-text">GALLERY</span></a>
+            <a href="social.html" class="bar-item bar-button"><i class="fas fa-share-alt"></i><span class="bar-button-text">SOCIAL</span></a>
+            <a href="contact.html" class="bar-item bar-button"><i class="fas fa-envelope"></i><span class="bar-button-text">REGISTER</span></a>
+        </div>
+
+        <div class="showcase">
+            <div class="bg-img img-1">
+                <form action="#top">
+                    <div class="title">
+                        <h2>Register here</h2>
+                    </div>
+                    <div class="info">
+                        <input required class="fname" type="text" name="name" placeholder="Full name">
+                        <input required type="text" name="name" placeholder="Email">
+                        <input required type="text" name="name" placeholder="Phone number">
+                        <input required type="password" name="name" placeholder="Password">
+                        <select required>
+                            <option value="">Select occupation</option>
+                            <option value="student">Student</option>
+                            <option value="freelancer">Freelancer</option>
+                            <option value="singer">Singer</option>
+                        </select>
+                    </div>
+                    <button type="submit" href="#top">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="bg-img img-2">
+            <img src="assets/LovesickGirls_main.jpg" style="visibility: hidden; width: 60%;" />
+            <footer>
+                <a href="#top">Back To Top</a>
+                <p>&copy; 2021 Fan Page Group.  All rights reserved.</p>
+            </footer>
+        </div>
+
+    </body>
+</html>

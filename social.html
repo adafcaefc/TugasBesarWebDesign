@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/bar.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="assets/BP_Favicon_small.png">
+        <title>BLACKPINK FANPAGE</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+        <style>
+            .showcase
+            {
+                color: rgb(255, 189, 223);
+                margin: 0px;
+                text-align: center;
+                background-color: black;
+            }
+            .showcase a
+            {
+                transition: all 0.2s ease-in-out;
+                text-decoration: none;
+                color: inherit;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            .showcase a:hover 
+            {
+                text-shadow: 0px 0px 0.75em rgba(255, 181, 181, 0.418);
+                font-size: 1.25em;
+            }
+            .showcase a:visited
+            {
+                color: inherit;
+            }
+            .showcase p 
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                width: 50%;
+                margin: auto;
+                padding-bottom: 64px;
+                line-height: 28px;
+            }
+            .bg-img
+            {
+                margin: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-1
+            {
+                padding-top: 128px;
+                padding-bottom: 256px;
+                background-position: center;
+                background-image:
+                    linear-gradient(to top, black, rgba(0, 0, 0, 0)),
+                    url('assets/202005041136-main.cropped_1588567085.jpg');
+                width: 100%;
+            }
+            .img-2
+            {
+                background-image:
+                    linear-gradient(to bottom, black, rgba(0, 0, 0, 0)),
+                    url('assets/6d9967456acac60b7dd0c62b11b306a1.png');
+                width: 100%;
+            }    
+            .main-container 
+            {
+                outline: none;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 16px;
+                color: #eee;
+                padding: 32px;
+                width: 60%;
+                margin: auto;
+                background: rgba(0, 0, 0, 0.75); 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .main-container i
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 64px;
+                margin-left: 32px;
+                margin-right: 32px;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                width: 96px;
+                height: 96px;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+            }
+            .main-container i:hover
+            {
+                font-size: 80px;
+            }
+            @media all and (max-width: 700px) 
+            {
+                .main-container
+                {
+                    flex-direction: column;
+                }
+                .main-container i
+                {
+                    font-size: 128px;
+                    width: 160px;
+                    height: 160px;
+                    margin-top: 64px;
+                    margin-bottom: 64px;
+                }
+                .main-container i:hover
+                {
+                    font-size: 176px;
+                }
+            }
+            @media all and (min-width: 1280px) 
+            {
+                .main-container i
+                {
+                    font-size: 128px;
+                    width: 160px;
+                    height: 160px;
+                    margin-left: 64px;
+                    margin-right: 64px;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                }
+                .main-container i:hover
+                {
+                    font-size: 176px;
+                }
+            }
+        </style>
+    </head>
+    <body id="top">
+        <div class="bar">
+            <a href="" class="bar-item bar-button" style="visibility: hidden;"></a>
+            <a href="index.html#home" class="bar-item bar-button"><i class="fa fa-home"></i><span class="bar-button-text">HOME</span></a>
+            <a href="about.html" class="bar-item bar-button"><i class="fas fa-info-circle"></i><span class="bar-button-text">ABOUT</span></a>
+            <a href="gallery.html" class="bar-item bar-button"><i class="fa fa-image"></i><span class="bar-button-text">GALLERY</span></a>
+            <a href="social.html" class="bar-item bar-button"><i class="fas fa-share-alt"></i><span class="bar-button-text">SOCIAL</span></a>
+            <a href="contact.html" class="bar-item bar-button"><i class="fas fa-envelope"></i><span class="bar-button-text">REGISTER</span></a>
+        </div>
+
+        <div class="showcase">
+            <div class="bg-img img-1">
+                <div class="main-container">
+                    <a target="_blank" href="https://www.facebook.com/BLACKPINKOFFICIAL"><i class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://twitter.com/blackpink"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-img img-2">
+            <img src="assets/LovesickGirls_main.jpg" style="visibility: hidden; width: 60%;" />
+            <footer>
+                <a href="#top">Back To Top</a>
+                <p>&copy; 2021 Fan Page Group.  All rights reserved.</p>
+            </footer>
+        </div>
+
+    </body>
+</html>
