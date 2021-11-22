@@ -25,7 +25,7 @@ var text_shadow_visualizer = function(audio, elem, audioData)
     }
 
     // membuat audio object baru
-    var music = new Audio;
+    var music = new Audio; // <audio src="...">
     music.setAttribute("src", "assets/bgm.mp3")
     music.loop = true;
 
