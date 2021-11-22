@@ -46,7 +46,9 @@
         <script>
             $.fn.slideToggleBool = function(bool, options) 
             {
-                return bool? $(this).slideDown(options) : $(this).slideUp(options);
+                return bool
+                    ? $(this).slideDown(options) 
+                    : $(this).slideUp(options);
             }
             $(document).ready(function () 
             {
