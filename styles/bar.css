@@ -26,12 +26,14 @@
 	display: inline-block;
 	width: auto;
 	position: static;
-	font-family: 'Roboto Condensed'
+	font-family: 'Roboto Condensed';
+	transition: all 0.2s ease-in-out;
 }
 
 .bar .bar-item 
 {
-	padding: 8px 16px;
+	font-size: 24px;
+	padding: 8px 32px;
 	float: left;
 	width: auto;
 	border: none;
@@ -41,5 +43,45 @@
 
 .bar-button-text 
 {
-	padding-left: 16px;
+	font-size: 24px;
+	padding-left: 24px;
+	transition: all 0.2s ease-in-out;
+}
+
+.dummy
+{
+	display: block;
+	float: left;
+	padding: 8px 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+@media all and (max-width: 1200px) 
+{
+	.dummy
+	{
+		padding: 4px 8px;
+	}
+	.bar
+	{
+		text-align: center;
+	}
+	.bar .bar-item 
+	{
+		font-size: 2em;
+		padding: 16px;
+	}
+	.bar-button-text 
+	{
+		font-size: 0px;
+		padding-left: 0px;
+	}
+}
+
+@media all and (max-width: 400px) 
+{
+	.bar
+	{
+		height: 0px;
+	}
 }

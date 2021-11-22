@@ -1,0 +1,74 @@
+form, input, select
+{ 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #eee;
+}
+form 
+{
+    padding: 32px;
+    width: 320px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.75); 
+}
+.title 
+{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.info 
+{
+    display: flex;
+    flex-direction: column;
+}
+input, select 
+{
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+input::placeholder, select:invalid
+{
+    color: rgba(238, 238, 238, 0.5);
+}
+option:focus 
+{
+    border: none;
+}
+option 
+{
+    background: black; 
+    border: none;
+}
+button 
+{
+    text-transform: uppercase;
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px; 
+    border: none;
+    background: #00000000; 
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 4px;
+    font-weight:200;
+    line-height: 32px;
+}
+button:hover 
+{
+    cursor: pointer;
+    background: #00000000; 
+    text-shadow: 0 0px 15px rgba(255, 255, 255, .5);
+    font-size: 1.5em;
+}
