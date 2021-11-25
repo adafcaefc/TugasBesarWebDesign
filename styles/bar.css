@@ -1,5 +1,4 @@
-.bar-button 
-{
+.bar-button {
 	border: none;
 	display: inline-block;
 	padding: 8px 16px;
@@ -12,15 +11,13 @@
 	cursor: pointer;
 }
 
-.bar-button:hover 
-{
+.bar-button:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 	color: #000;
 	background-color: #ccc;
 }
 
-.bar
-{
+.bar {
 	width: 100%;
 	overflow: hidden;
 	display: inline-block;
@@ -30,8 +27,7 @@
 	transition: all 0.2s ease-in-out;
 }
 
-.bar .bar-item 
-{
+.bar .bar-item {
 	font-size: 24px;
 	padding: 8px 32px;
 	float: left;
@@ -41,47 +37,62 @@
 	outline: 0
 }
 
-.bar-button-text 
-{
+.bar-button-text {
 	font-size: 24px;
 	padding-left: 24px;
 	transition: all 0.2s ease-in-out;
 }
 
-.dummy
-{
+.dummy {
 	display: block;
 	float: left;
 	padding: 8px 16px;
-    transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
-@media all and (max-width: 1280px) 
-{
-	.dummy
-	{
+.icon {
+	display: none !important;
+}
+
+@media all and (max-width: 1280px) {
+	.dummy {
 		padding: 4px 8px;
 	}
-	.bar
-	{
+
+	.bar {
 		text-align: center;
 	}
-	.bar .bar-item 
-	{
+
+	.bar .bar-item {
 		font-size: 2em;
 		padding: 16px;
 	}
-	.bar-button-text 
-	{
+
+	.bar-button-text {
 		font-size: 0px;
 		padding-left: 0px;
 	}
 }
 
-@media all and (max-width: 400px) 
-{
-	.bar
-	{
-		width: 100%;
+@media all and (max-width: 400px) {
+	.bar-item {
+		display: none !important;
+	}
+
+	.icon {
+		display: block !important;
+	}
+
+	.responsive {
+		float: none !important;
+		display: block !important;
+		width: 400px !important;
+		text-align: left;
+		padding: 5px 16px !important;
+	}
+
+	.responsive .bar-button-text {
+		font-size: 24px !important;
+		padding-left: 24px !important;
 	}
 }

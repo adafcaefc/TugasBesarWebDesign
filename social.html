@@ -10,6 +10,7 @@
         <link rel="icon" type="image/png" href="assets/BP_Favicon_small.png">
         <title>SOCIAL MEDIA</title>
         <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+        <script src="/scripts/icon.js" defer></script>
         <style>
             .bg-img
             {
@@ -37,8 +38,9 @@
         </style>
     </head>
     <body id="top">
-        <div class="bar">
+        <div class="bar" id="topnav">
             <a href="" class="bar-item bar-button dummy" style="visibility: hidden;"></a>
+            <a href="javascript:void(0);" class="bar-item bar-button icon" onclick="iconToggle()"><i class="fas fa-bars"></i><span class="bar-button-text">MENU</span></a>
             <a href="index.html#home" class="bar-item bar-button"><i class="fa fa-home"></i><span class="bar-button-text">HOME</span></a>
             <a href="about.html" class="bar-item bar-button"><i class="fas fa-info-circle"></i><span class="bar-button-text">ABOUT</span></a>
             <a href="gallery.html" class="bar-item bar-button"><i class="fa fa-image"></i><span class="bar-button-text">GALLERY</span></a>
