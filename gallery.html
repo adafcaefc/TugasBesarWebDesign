@@ -43,6 +43,33 @@
                 width: 560px;
                 height: 315px;
             }
+            .img-big img
+            {
+                width: auto;
+                height: auto;
+                opacity: 1;
+                transition: all 0.2s ease-in-out;
+            }
+            .img-small img
+            {
+                opacity: 0;
+                height: 0px;
+                transition: all 0.2s ease-in-out;
+            }
+            @media all and (max-width: 728px) 
+            {
+                .img-big img
+                {
+                    height: 0px;
+                    opacity: 0;
+                }
+                .img-small img
+                {
+                    width: auto;
+                    height: auto;
+                    opacity: 1;
+                }
+            }           
         </style>
         <script>
             $.fn.slideToggleBool = function(bool, options) 
@@ -101,23 +128,42 @@
 
         <div class="showcase">
             <div class="bg-img img-1">
-                <img class="" src="assets/soft-cover.png" 
-                    style="width: auto; height: auto;" 
-                    usemap="#blackpink-image-map" />
-                <map name="blackpink-image-map">
-                    <area target="" alt="lisa" title="lisa" href="javascript:toggle_lisa();"
-                        coords="2,196,13,134,65,132,81,116,64,107,62,75,70,27,91,1,135,1,159,21,170,48,175,86,175,107,149,126,175,147,219,163,195,162,218,211,216,275,2,274"
-                        shape="poly">
-                    <area target="" alt="jisoo" title="jisoo" href="javascript:toggle_jisoo()"
-                        coords="218,277,219,212,200,166,232,166,243,161,248,142,270,107,275,57,289,23,308,3,356,-1,375,15,384,44,388,76,383,118,389,147,410,158,442,163,434,212,434,264,426,277"
-                        shape="poly">
-                    <area target="" alt="jennie" title="jennie" href="javascript:toggle_jennie()"
-                        coords="435,273,442,267,434,251,453,151,484,145,511,56,523,15,535,1,596,2,608,18,613,43,626,83,627,107,635,134,683,148,693,200,702,241,700,278"
-                        shape="poly">
-                    <area target="" alt="rose" title="rose" href="javascript:toggle_rose()"
-                        coords="705,278,704,242,686,153,743,131,747,115,734,90,723,61,713,39,716,18,727,1,799,-1,807,15,808,29,813,37,815,56,805,70,813,89,828,99,831,116,896,143,897,278,751,278"
-                        shape="poly">
-                </map>
+                <div class="img-big">
+                    <img src="assets/soft-cover.png" 
+                        usemap="#blackpink-image-map" />
+                    <map name="blackpink-image-map">
+                        <area target="" alt="lisa" title="lisa" href="javascript:toggle_lisa();"
+                            coords="2,196,13,134,65,132,81,116,64,107,62,75,70,27,91,1,135,1,159,21,170,48,175,86,175,107,149,126,175,147,219,163,195,162,218,211,216,275,2,274"
+                            shape="poly">
+                        <area target="" alt="jisoo" title="jisoo" href="javascript:toggle_jisoo()"
+                            coords="218,277,219,212,200,166,232,166,243,161,248,142,270,107,275,57,289,23,308,3,356,-1,375,15,384,44,388,76,383,118,389,147,410,158,442,163,434,212,434,264,426,277"
+                            shape="poly">
+                        <area target="" alt="jennie" title="jennie" href="javascript:toggle_jennie()"
+                            coords="435,273,442,267,434,251,453,151,484,145,511,56,523,15,535,1,596,2,608,18,613,43,626,83,627,107,635,134,683,148,693,200,702,241,700,278"
+                            shape="poly">
+                        <area target="" alt="rose" title="rose" href="javascript:toggle_rose()"
+                            coords="705,278,704,242,686,153,743,131,747,115,734,90,723,61,713,39,716,18,727,1,799,-1,807,15,808,29,813,37,815,56,805,70,813,89,828,99,831,116,896,143,897,278,751,278"
+                            shape="poly">
+                    </map>
+                </div>
+                <div class="img-small">
+                    <img src="assets/soft-cover-small.png" 
+                        usemap="#blackpink-image-map-small" />
+                    <map name="blackpink-image-map-small">
+                        <area target="" alt="lisa" title="lisa" href="javascript:toggle_lisa();"
+                            coords="-1,88,3,64,29,62,36,57,27,46,31,14,37,1,69,1,81,14,89,45,87,55,77,57,73,62,84,70,103,77,99,84,109,99,109,123,1,123"
+                            shape="poly">
+                        <area target="" alt="jisoo" title="jisoo" href="javascript:toggle_jisoo()"
+                            coords="113,126,111,99,113,79,128,54,138,15,148,0,181,1,189,13,192,36,190,61,195,75,217,82,213,100,215,124,163,126,140,126"
+                            shape="poly">
+                        <area target="" alt="jennie" title="jennie" href="javascript:toggle_jennie()"
+                            coords="217,122,225,77,242,73,258,16,268,-1,299,0,305,11,306,17,313,54,317,66,338,71,346,90,341,95,352,122"
+                            shape="poly">
+                        <area target="" alt="rose" title="rose" href="javascript:toggle_rose()"
+                            coords="356,129,343,97,347,89,343,77,369,64,373,56,362,40,354,17,363,0,399,0,405,16,405,28,402,35,404,44,413,48,415,58,435,66,444,80,440,116"
+                            shape="poly">
+                    </map>
+                </div>
             </div>
 
             <p style="font-size: 2.5em;">&nbsp;</p>
